@@ -21,11 +21,10 @@ set showcmd
 set smartindent
 set incsearch
 set modeline
+set linebreak
+set wrap
 filetype plugin on
 filetype indent on
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-map <F2> :NERDTree<CR>
 " Source the vimrc file after saving it
 autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
 " vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
