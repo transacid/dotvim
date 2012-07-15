@@ -6,3 +6,7 @@
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
 	ignore = dirty
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	ignore = dirty
