@@ -1,0 +1,4 @@
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = http://github.com/mattn/zencoding-vim.git
+	ignore = dirty
