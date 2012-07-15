@@ -1,6 +1,6 @@
 scriptencoding utf-8
 " ^^ Please leave the above line at the start of the file.
-call pathogen#infect
+call pathogen#infect()
 
 syntax on
 set hlsearch
