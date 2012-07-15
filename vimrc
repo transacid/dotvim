@@ -1,5 +1,13 @@
 scriptencoding utf-8
 " ^^ Please leave the above line at the start of the file.
+call pathogen#infect
+
+syntax on
+set hlsearch
+if isdirectory(expand("$VIMRUNTIME/ftplugin"))
+    filetype plugin on
+    filetype indent on
+endif
 set laststatus=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
 set scrolloff=10
