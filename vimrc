@@ -76,6 +76,11 @@ if has("eval")
 	let is_bash=1
 endif
 
+" persistant undo
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
 
 " Source the vimrc file after saving it
 autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
