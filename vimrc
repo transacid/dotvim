@@ -34,6 +34,7 @@ set incsearch
 set modeline
 set linebreak
 set wrap
+set relativenumber 
 " Don't use Ex mode, use Q for formatting
 map Q gq
 " When doing tab completion, give the following files lower priority. You may
