@@ -1,7 +1,3 @@
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = http://github.com/mattn/zencoding-vim.git
-	ignore = dirty
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
