@@ -27,6 +27,7 @@ set ignorecase
 set viminfo='20,\"500   " Keep a .viminfo file.
 set cursorline
 set cursorcolumn
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set showcmd
