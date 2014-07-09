@@ -9,7 +9,7 @@ if isdirectory(expand("$VIMRUNTIME/ftplugin"))
     filetype indent on
 endif
 set wildmenu
-set wildmode=longest:full"
+set wildmode=list:longest,full
 "set wildmode=list:longest"
 set laststatus=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
