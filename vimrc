@@ -94,6 +94,9 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" NERDtree
+map <C-n> :NERDTreeToggle<CR>
+
 " Source the vimrc file after saving it
 autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
 " vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
