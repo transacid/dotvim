@@ -81,7 +81,7 @@ if has("eval")
 	let is_bash=1
 endif
 
-if version >=704
+if version >=703
 " persistant undo
 set undodir=$HOME/.vim/undodir " where to save undo histories
 set undofile                " Save undo's after file closes
