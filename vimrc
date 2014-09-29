@@ -31,6 +31,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set showcmd
+set title
 set smartindent
 set incsearch
 set modeline
