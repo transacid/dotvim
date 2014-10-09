@@ -28,4 +28,4 @@
 	url = https://github.com/bronson/vim-trailing-whitespace.git
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
-	url = git@github.com:davidhalter/jedi-vim.git
+	url = https://ithub.com/davidhalter/jedi-vim.git
