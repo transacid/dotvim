@@ -32,12 +32,16 @@ set tabstop=4
 set shiftwidth=4
 set showcmd
 set title
-set breakindent
 set smartindent
 set incsearch
 set modeline
 set linebreak
 set wrap
+
+if has("patch338")
+  set breakindent
+endif
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 " When doing tab completion, give the following files lower priority. You may
