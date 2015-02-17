@@ -39,7 +39,7 @@ set modeline
 set linebreak
 set wrap
 
-if has("patch338")
+if v:version > 702 || (v:version == 702 && has("patch338"))
   set breakindent
 endif
 
