@@ -1,6 +1,7 @@
 scriptencoding utf-8
 " ^^ Please leave the above line at the start of the file.
-call pathogen#infect()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 syntax on
 set hlsearch
