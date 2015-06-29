@@ -39,6 +39,8 @@ set incsearch
 set modeline
 set linebreak
 set wrap
+" paste in X11
+set cb=unnamed
 
 if v:version > 704 || (v:version == 704 && has("patch338"))
   set breakindent
