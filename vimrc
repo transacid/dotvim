@@ -42,6 +42,8 @@ set wrap
 " paste in X11
 set cb=unnamed
 
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
+
 if v:version > 704 || (v:version == 704 && has("patch338"))
   set breakindent
 endif
