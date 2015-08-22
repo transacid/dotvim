@@ -41,6 +41,9 @@ set linebreak
 set wrap
 " paste in X11
 set cb=unnamed
+set autoread
+set number
+set relativenumber
 
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
 
