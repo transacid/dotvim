@@ -43,7 +43,6 @@ set wrap
 set cb=unnamed
 set autoread
 set number
-set relativenumber
 
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
 
@@ -97,6 +96,7 @@ if has("eval")
 endif
 
 if version >=703
+set relativenumber
 " persistant undo
 set undodir=$HOME/.vim/undodir " where to save undo histories
 set undofile                " Save undo's after file closes
