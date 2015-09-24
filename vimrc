@@ -43,6 +43,7 @@ set wrap
 set cb=unnamed
 set autoread
 set number
+let mapleader = ","
 
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
 
@@ -112,6 +113,8 @@ endif
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
 
+" save with sudo
+noremap <Leader>W :w !sudo tee % > /dev/null
 " Source the vimrc file after saving it
 autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
 " vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
