@@ -14,9 +14,6 @@
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
 	ignore = dirty
-[submodule "bundle/vim-json"]
-	path = bundle/vim-json
-	url = https://github.com/elzr/vim-json.git
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim.git
