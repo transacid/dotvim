@@ -17,8 +17,8 @@ set laststatus=2
 set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
 set scrolloff=10
 set t_Co=256
-colorscheme herald
-"colorscheme desert
+"colorscheme herald
+colorscheme badwolf
 set nocompatible        " Use Vim defaults (much better!)
 set bs=2                " Allow backspacing over everything in insert mode
 set ai                  " Always set auto-indenting on
