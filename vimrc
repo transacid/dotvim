@@ -96,6 +96,10 @@ if has("eval")
 	let is_bash=1
 endif
 
+" number toggles
+nnoremap <F2> :set nonumber!<CR>
+nnoremap <F3> :set norelativenumber!<CR>
+
 if version >=703
 set relativenumber
 " persistant undo
