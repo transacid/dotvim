@@ -60,40 +60,40 @@ set suffixes+=.info,.aux,.log,.dvi,.bbl,.out,.o,.lo
 filetype plugin on
 filetype indent on
 if v:version >= 700
-	set numberwidth=3
+    set numberwidth=3
 endif
 
 " encoding
 if &fileencodings !~? "ucs-bom"
-	set fileencodings^=ucs-bom
+    set fileencodings^=ucs-bom
 endif
 if &fileencodings !~? "utf-8"
-	let g:added_fenc_utf8 = 1
-	set fileencodings+=utf-8
+    let g:added_fenc_utf8 = 1
+    set fileencodings+=utf-8
 endif
 if &fileencodings !~? "default"
-	set fileencodings+=default
+    set fileencodings+=default
 endif
 
 "  Terminal fixes
 if &term ==? "xterm"
-	set t_Sb=^[4%dm
-	set t_Sf=^[3%dm
-	set ttymouse=xterm2
+    set t_Sb=^[4%dm
+    set t_Sf=^[3%dm
+    set ttymouse=xterm2
 endif
 if &term ==? "gnome" && has("eval")
-	exec "set <C-Left>=\eO5D"
-	exec "set <C-Right>=\eO5C"
+    exec "set <C-Left>=\eO5D"
+    exec "set <C-Right>=\eO5C"
 endif
 if "" == &shell
-	if executable("/bin/bash")
-		set shell=/bin/bash
-	elseif executable("/bin/sh")
-		set shell=/bin/sh
-	endif
+    if executable("/bin/bash")
+        set shell=/bin/bash
+    elseif executable("/bin/sh")
+        set shell=/bin/sh
+    endif
 endif
 if has("eval")
-	let is_bash=1
+    let is_bash=1
 endif
 
 " number toggles
@@ -121,4 +121,4 @@ map <C-n> :NERDTreeToggle<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null
 " Source the vimrc file after saving it
 autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
-" vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
+" vim: set fenc=utf-8 tw=80 sw=4 sts=4 et foldmethod=marker :
