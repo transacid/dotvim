@@ -117,6 +117,8 @@ endif
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
 
+" remove trailing whitespaces
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 " save with sudo
 noremap <Leader>W :w !sudo tee % > /dev/null
 " Source the vimrc file after saving it
