@@ -9,7 +9,12 @@ function init {
 
 function update {
     git pull
-	git submodule foreach git pull origin master
+    cd bundle
+    for i in * ; do
+        pushd $i
+	    git submodule foreach git pull origin master
+        popd
+    done
 }
 
 if [ "$1" = "init" ] ; then
