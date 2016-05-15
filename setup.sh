@@ -1,20 +1,28 @@
 #!/bin/bash
 
 function init {
-	ln -s ~/.vim/vimrc ~/.vimrc
     git submodule init
     git submodule update
+    pushd bundle
+    for i in * ; do
+        pushd $i
+        git submodule init
+        git submodule update
+        popd
+    done
+    popd
 
 }
 
 function update {
     git pull
-    cd bundle
+    pushd bundle
     for i in * ; do
         pushd $i
 	    git submodule foreach git pull origin master
         popd
     done
+    popd
 }
 
 if [ "$1" = "init" ] ; then
