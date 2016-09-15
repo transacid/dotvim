@@ -39,6 +39,7 @@ set incsearch
 set modeline
 set linebreak
 set wrap
+set textwidth=72
 " paste in X11
 set cb=unnamed
 set autoread
