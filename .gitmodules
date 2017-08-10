@@ -42,6 +42,3 @@
 	path = bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
 	ignore = dirty
-[submodule "bundle/sslsecure.vim"]
-	path = bundle/sslsecure.vim
-	url = https://github.com/chr4/sslsecure.vim.git
