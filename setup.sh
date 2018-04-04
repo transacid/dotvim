@@ -17,9 +17,11 @@ function init {
 function update {
     git pull
     pushd bundle
+    git submodule init
     git submodule foreach git pull origin master
     for i in * ; do
         pushd $i
+        git submodule init
 	    git submodule foreach git pull origin master
         popd
     done
