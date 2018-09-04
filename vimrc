@@ -1,14 +1,32 @@
 scriptencoding utf-8
 " ^^ Please leave the above line at the start of the file.
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
 
 syntax on
 set hlsearch
-if isdirectory(expand("$VIMRUNTIME/ftplugin"))
-    filetype plugin on
-    filetype indent on
-endif
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-surround'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'sjl/badwolf'
+Plugin 'chrisbra/csv.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 set wildmenu
 "set wildmode=list:longest,full
 "set wildmode=list:longest"
