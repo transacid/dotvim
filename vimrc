@@ -23,6 +23,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
 filetype plugin indent on    " required
