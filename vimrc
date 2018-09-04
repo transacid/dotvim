@@ -23,7 +23,6 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
-Plugin 'vim-scripts/nginx.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
