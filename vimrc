@@ -24,6 +24,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
 Plugin 'blueshirts/darcula'
+Plugin 'tpope/vim-fugitive'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
@@ -64,6 +65,7 @@ set wrap
 set cb=unnamed
 set autoread
 set number
+set noswapfile
 let mapleader = ","
 
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
