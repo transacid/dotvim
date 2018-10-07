@@ -23,6 +23,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
+Plugin 'blueshirts/darcula'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
@@ -37,7 +38,7 @@ set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p
 set scrolloff=10
 set t_Co=256
 "colorscheme herald
-colorscheme badwolf
+colorscheme darcula
 set nocompatible        " Use Vim defaults (much better!)
 set bs=2                " Allow backspacing over everything in insert mode
 set ai                  " Always set auto-indenting on
