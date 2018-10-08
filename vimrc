@@ -1,4 +1,5 @@
 scriptencoding utf-8
+set encoding=utf-8
 " ^^ Please leave the above line at the start of the file.
 
 syntax on
@@ -74,6 +75,8 @@ if v:version > 704 || (v:version == 704 && has("patch338"))
   set breakindent
 endif
 
+let g:miniBufExplForceSyntaxEnable = 1
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 " When doing tab completion, give the following files lower priority. You may
@@ -145,5 +148,5 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 " save with sudo
 noremap <Leader>W :w !sudo tee % > /dev/null
 " Source the vimrc file after saving it
-autocmd! bufwritepost ~/.vim/vimrc source $MYVIMRC
+autocmd! bufwritepost ~/.vim/vimrc nested :source ~/.vim/vimrc
 " vim: set fenc=utf-8 tw=80 sw=4 sts=4 et foldmethod=marker :
