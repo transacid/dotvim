@@ -26,6 +26,7 @@ Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
 Plugin 'blueshirts/darcula'
 Plugin 'tpope/vim-fugitive'
+Plugin 'deb.vim'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
