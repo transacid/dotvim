@@ -69,7 +69,7 @@ set autoread
 set number
 set noswapfile
 let mapleader = ","
-set mouse=ni
+set mouse=
 
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
 
