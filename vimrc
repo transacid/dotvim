@@ -1,6 +1,8 @@
 scriptencoding utf-8
 set encoding=utf-8
 " ^^ Please leave the above line at the start of the file.
+"" kitty needs this https://sw.kovidgoyal.net/kitty/faq.html#using-a-color-theme-with-a-background-color-does-not-work-well-in-vim
+let &t_ut=''
 
 syntax on
 set hlsearch
@@ -27,7 +29,8 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'blueshirts/darcula'
 Plugin 'tpope/vim-fugitive'
 Plugin 'deb.vim'
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -144,6 +147,8 @@ endif
 
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
+" FZF
+map <C-f> :FZF<CR>
 
 " remove trailing whitespaces
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
