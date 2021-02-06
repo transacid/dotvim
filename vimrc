@@ -19,21 +19,21 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-surround'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'sjl/badwolf'
 Plugin 'chrisbra/csv.vim'
 Plugin 'blueshirts/darcula'
 Plugin 'tpope/vim-fugitive'
 Plugin 'deb.vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'junegunn/fzf.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+set rtp+=/usr/local/opt/fzf
 
 set wildmenu
 "set wildmode=list:longest,full
@@ -79,8 +79,6 @@ set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:❯,precedes:❮
 if v:version > 704 || (v:version == 704 && has("patch338"))
   set breakindent
 endif
-
-let g:miniBufExplForceSyntaxEnable = 1
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
